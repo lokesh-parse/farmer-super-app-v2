@@ -1,11 +1,14 @@
 function SectionCard({ title, children, action }) {
   return (
-    <div className="card">
+    <div className="premium-section-card">
       <div className="section-card-header">
         <h3>{title}</h3>
-        {action ? <div>{action}</div> : null}
+        {action}
       </div>
-      <div>{children}</div>
+
+      <div className="section-content">
+        {children}
+      </div>
     </div>
   );
 }
